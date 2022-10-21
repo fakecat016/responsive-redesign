@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Responsive Redesign</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'> 
+<style>
+body {font-family:'Balsamiq Sans'}
+h1,h2,h3,h4,h5,h6 {font-family:'Balsamiq Sans'; letter-spacing:0px}
+</style>
+<body>
+
+<!-- Navigation (Sits on top) -->
+<div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide"><h2>
+    <a href="#home" class="w3-bar-item w3-button">Responsive Redesign: DESeq2 Tutorial</a>
+
+
+<!-- Right-sided navbar links. Hide them on small screens -->
+<div class="w3-right w3-hide-small"><h6>
+    <a href="#page" class="w3-bar-item w3-button">Original Page</a>
+    <a href="#problems" class="w3-bar-item w3-button">Problems</a>
+    <a href="#lowfi" class="w3-bar-item w3-button">Low-Fi</a>
+    <a href="#guide" class="w3-bar-item w3-button">Visual Guide</a>
+    <a href="#highfi" class="w3-bar-item w3-button">High-Fi</a>
+    <a href="#redesign" class="w3-bar-item w3-button">Redesign</a>
+    </div>
+</div>
+
+
+<!-- Start Content -->
+<div id="home" class="w3-content">
+
+    <!-- Original Page -->
+    <div id="page" class="w3-padding-top-64">
+        <h3 class="w3-row"><br>Original Page</h3>
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                For my research, I extensively visit this extremely long and technical page 
+                <a href="http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html">Analyzing RNA-seq data with DESeq2</a>. <br>
+                Below are two screenshots of the page:
+            </p>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-half">
+              <div class="w3-card">
+                <img src="page_screenshot_1.png" alt="original page screenshot 1" style="width:100%">
+              </div>
+            </div>
+          
+            <div class="w3-half">
+              <div class="w3-card">
+                <img src="page_screenshot_2.png" alt="original page screenshot 2" style="width:100%">
+              </div>
+            </div>
+          </div>
+
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                Although this page is definitely helpful, I don't like it :( <br>
+                Why?
+            </p>
+        </div>
+    </div>
+
+    <!-- Problems -->
+    <div id="problems" class="w3-padding-top-64">
+        <h3 class="w3-row"><br>Problems</h3>
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                Problems I experienced:
+                <ul>
+                    <li>Inefficient menu/guide links: all the links are at the top of the page, so users have to go back to the top of the page before getting redirected.
+                    </li>
+                    <li>Unclear content hierarchy: titles and subtitles are of similar sizes and thickness, and there are no indentations between sections. 
+                    </li>
+                    <li>Non-appealing visuals: dry visual designs, and length per line is too long for effective reading.
+                    </li>
+                </ul>
+            </p>
+            <p class="w3-large">
+                Problems returned by accessibility checker:
+                <ul>
+                    <li>Missing alternative texts for images</li>
+                    <ul>
+                        <li>Personally, I don't really agree with this diagnosis, even though it is true - this page has descriptions before and after the figures about their content and meaning. In addition, the only function for those images, I would say, is to show what users should expect by running the associated code, so it does not make sense to consider the case where the images cannot be viewed/loaded properly. 
+                        </li>
+                    </ul>
+                    <li>Low contrast of texts in code snippets</li>
+                    <ul>
+                        <li>I agree with the second evaluation that the code snippets have low contrast. I think this is a problem worthy of attention for R in general - the color coding for different parts of the code (variables, functions, arguments, comments, etc.) are of low contrast between themselves and the background.
+                        </li>
+                    </ul>
+                </ul>
+                <div class="w3-card">
+                    <img src="wave_screenshot.png" alt="wave screenshot" style="width:100%">
+                </div>
+            </p>
+        </div>
+    </div>
+
+    <!-- Low-Fi -->
+    <div id="lowfi" class="w3-padding-top-64">
+        <h3 class="w3-row"><br>Low-fidelity Wireframing</h3>
+
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                A low-fi wireframe is designed to address these problems:
+            </p>
+            <div class="w3-card">
+                <img src="lowfi.png" alt="low-fi wireframe" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Visual Guide -->
+    <div id="guide" class="w3-padding-top-64">
+        <h3 class="w3-row"><br>Visual Design Style Guide</h3>
+
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                A corresponding visual design style guide is defined as the reference for high-fi prototyping:
+            </p>
+            <div class="w3-card">
+                <img src="guide.png" alt="visual design style guide" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- High-Fi -->
+    <div id="highfi" class="w3-padding-top-64">
+        <h3 class="w3-row"><br>High-Fi Prototyping</h3>
+
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                An high-fi prototype is created and annotated:
+            </p>
+            <div class="w3-card">
+                <img src="marked_hifi.png" alt="marked high-fi prototype" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- High-Fi -->
+    <div id="redesign" class="w3-padding-top-64">
+        <h3 class="w3-row"><br>Responsive Redesign</h3>
+
+        <div class="w3-padding-large">
+            <p class="w3-large">
+                A responsive redesigned version of the page is built based on the prototype. <br>
+                You can browse it using the embeded window below (limited responsiveness) or visit it <a href="https://fakecat016.github.io/redesigned/">here</a> (full responsiveness).<br>
+                Menu buttons are functional - please click them :)
+            </p>
+            <iframe src="redesigned.html" width="100%" height="500px" style="border:none;">
+            </iframe>
+        </div>
+    </div>
+
+
+
+<!-- End Content -->
+</div>
+
+</body>
+</html> 
